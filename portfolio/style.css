@@ -1,0 +1,268 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: #FEFAF6;
+        margin: 0%;
+        padding: 0%;
+    }
+    
+    h1 {
+        font-family: sans-serif;
+    }
+    
+    .nav {
+        display: flex;
+        height: 80px;
+        width: auto;
+        justify-content: center;
+        background-color: #FEFAF6;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        opacity: 1;
+    }
+    
+    .gi {
+        height: 40px;
+        width: 40px;
+        margin: 0 4%;
+    }
+    
+    .programmer {
+        height: 55px;
+        width: 55px;
+        position: relative;
+        bottom: 10%;
+    }
+    
+    li {
+        font-weight: bold;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0 4%;
+        list-style: none;
+    }
+    
+    li:hover::before {
+        content: "";
+        position: absolute;
+        transform: rotate(3deg);
+        top: 60px;
+        width: 60px;
+        border-bottom: 4px solid hotpink;
+        transition-delay: 2s;
+    }
+    
+    .nav2 {
+        background-color: #D6E5FA;
+        z-index: 100;
+        height: 70px;
+        transition: all 1.5s ease-in-out;
+        opacity: 1;
+    }
+    /* first container starts here */
+    
+    .first-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FEFAF6;
+    }
+    
+    .first-part {
+        width: 50%;
+        margin-top: 20%;
+        margin-left: 20%;
+        margin-bottom: 10%;
+    }
+    
+    span {
+        font-family: 'Festive', cursive;
+        color: red;
+    }
+    
+    .first-part h1 {
+        width: fit-content;
+        color: #232320;
+    }
+    
+    .first-part h6 {
+        width: 400px;
+        overflow-wrap: break-word;
+    }
+    
+    .main-img {
+        max-width: 400px;
+        max-height: 500px;
+        margin-left: 10%;
+        opacity: 0.7;
+        z-index: 1000;
+    }
+    
+    .main-img:hover {
+        opacity: 1;
+        transition: 0.6s ease-in;
+    }
+    /* second container starts here */
+    
+    .skills img {
+        height: 150px;
+        width: 150px;
+    }
+    
+    .skills {
+        /* background-color: #F0F0F0; */
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        width: 230px;
+        height: 300px;
+        margin: 20px 0px;
+        margin-left: 40px;
+        border: 2px solid;
+    }
+    
+    .skills:hover {
+        transform: rotate(7deg);
+        background-color: #CAF0F8;
+        transition: .3s;
+    }
+    
+    .second-container {
+        background-color: #FEFAF6;
+    }
+    
+    .skills-container h1 {
+        position: absolute;
+        color: white;
+        margin-bottom: 10px;
+    }
+    
+    .first-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .second-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .container-skills {
+        display: flex;
+    }
+    /* third container starts here */
+    
+    .third-container {
+        display: flex;
+        background-color: #FEFAF6;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .first-part {
+        width: 45%;
+        margin-right: 10%;
+    }
+    
+    .button {
+        border: 2px solid black;
+        border-radius: 30px;
+        height: 50px;
+        width: 150px;
+        position: relative;
+        background-color: aqua;
+        transition: 1.s ease-in-out;
+    }
+    
+    .button:hover {
+        height: 55px;
+        width: 160px;
+        background-color: cornflowerblue;
+        transition: 0.5s ease-out;
+    }
+    
+    .first-part-2 {
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+    
+    .stitch {
+        height: 550px;
+        width: 400px;
+        margin-left: 10%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        border-radius: 100px;
+    }
+    
+    .stitch:hover {
+        background-color: grey;
+        border: 4px solid blue;
+        transition: .4s;
+    }
+    
+    .stitch-img {
+        height: 350px;
+        width: 350px;
+    }
+
+    
+    @media only screen and (max-width: 600px) {
+        .main-img {
+            height: 350px;
+            width: 350px;
+        }
+        .stitch {
+            height: 350px;
+            width: 350px;
+        }
+        .stitch-img {
+            height: 300px;
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+        h6 {
+            text-align: center;
+            color: blue;
+        }
+    }
+    
+    @media only screen and (max-width: 500px) {
+        .main-img {
+            height: 250px;
+            width: 250px;
+        }
+        h6 {
+            display: inline;
+            width: 100px;
+            color: red;
+        }
+        .first-part {
+            /* margin-left: 5%; */
+            width: 250px;
+            margin: auto;
+        }
+        .stitch-img {
+            height: 250px;
+            width: 250px;
+        }
+        .stitch {
+            height: 300px;
+            width: 300px;
+        }
+    }
